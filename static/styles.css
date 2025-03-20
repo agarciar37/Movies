@@ -1,0 +1,74 @@
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.movieCard img {
+    border-radius: 10px;
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.movieCard .title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.movieCard .release {
+    font-size: 12px;
+    color: gray;
+}
+
+.popularity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.progress-bar {
+    width: 50px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #4CAF50;
+}
+
+.movieContainer {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.column-selector {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.column-selector button {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+.column-selector button.active {
+    border: 2px solid red;
+}
